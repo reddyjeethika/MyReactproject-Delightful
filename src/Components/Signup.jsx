@@ -92,7 +92,7 @@ function Signup() {
           required
         />
 
-        <button type="submit" className="signup-btn">Sign Up 🚀</button>
+        <button type="submit" className="signup-btn">Sign Up </button>
 
         <p className="login-text">
           Already have an account? <a href="/">Login</a>
