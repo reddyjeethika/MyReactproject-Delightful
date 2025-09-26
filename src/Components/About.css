@@ -1,0 +1,108 @@
+/* Container */
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #5a2d82; /* purple shade */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Welcome Card */
+.about-card {
+  background: #fff8f0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.about-card p {
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.about-card .highlight {
+  color: #e63946;
+  font-weight: bold;
+}
+
+/* Team Section */
+.about-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Team Cards */
+.team-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.team-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #e63946;
+}
+
+.team-info h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #5a2d82;
+}
+
+.team-info h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777;
+  margin: 5px 0 10px;
+}
+
+.team-info p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-image {
+    margin: 0 0 15px;
+  }
+}

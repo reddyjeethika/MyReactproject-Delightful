@@ -1,0 +1,137 @@
+/* General Page Container */
+.home-container {
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  background:black;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Carousel Images */
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Section Titles */
+h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-weight: 600;
+  color: #f0ebeb;
+}
+
+/* ✅ Offers Section */
+.offers {
+  margin: 40px 0;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.offer-card {
+  background: rgb(214, 134, 14);
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ Popular Dishes */
+.popular {
+  margin: 50px 0;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.dish-card {
+  background: rgb(19, 19, 19);
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.dish-card:hover {
+  transform: scale(1.03);
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 3px;
+  color: #f5b50a;
+}
+
+/* ✅ Reviews Section */
+.reviews {
+  margin: 50px 0;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background: rgb(214, 134, 14);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  position: relative;
+}
+
+.review-card h5 {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ✅ Coupons Section */
+.coupons {
+  margin: 50px 0;
+  padding: 25px;
+  background:black;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.coupons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coupons li {
+  padding: 8px 0;
+  font-size: 16px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.coupons strong {
+  color: #ff5722;
+}

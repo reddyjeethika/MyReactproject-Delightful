@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Page with Google Fonts</title>
+
+  <!-- Google Fonts: embedded link (paste this in the <head>) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* Use the Google Fonts */
+    :root{
+      --serif: "Cormorant Upright", Georgia, serif;
+      --sans: "Roboto", Arial, sans-serif;
+    }
+
+    body{
+      font-family: var(--sans);
+      line-height: 1.5;
+      background: #f7f8fb;
+      color: #1f2937;
+      padding: 2rem;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card{
+      background: white;
+      max-width: 900px;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(31,41,55,0.08);
+    }
+
+    header h1{
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    header p.lead{
+      color: #4b5563;
+      margin-bottom: 1.25rem;
+    }
+
+    .content p{
+      margin-bottom: 1rem;
+    }
+
+    .btn{
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      background: #2563eb;
+      color: white;
+    }
+
+    footer{
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    /* Small responsive tweak */
+    @media (max-width: 520px){
+      header h1 { font-size: 1.6rem; }
+      .card { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <h1>Beautiful Heading — Cormorant Upright</h1>
+      <p class="lead">A simple HTML page using Google Fonts embedded in the &lt;head&gt;.</p>
+    </header>
+
+    <section class="content">
+      <p>This paragraph uses the <strong>Roboto</strong> font family for clean, legible body text. The heading above uses <strong>Cormorant Upright</strong> for a more elegant display style.</p>
+
+      <p>Use these fonts by changing the <code>font-family</code> in your CSS to <code>var(--serif)</code> or <code>var(--sans)</code>, or directly to <code>"Cormorant Upright"</code> and <code>"Roboto"</code>.</p>
+
+      <a class="btn" href="#" role="button">Primary action</a>
+
+      <footer>
+        <p>Made with Google Fonts • Example page</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

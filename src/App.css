@@ -1,0 +1,26 @@
+body {
+  background-color: #111; /* Black background */
+  color: #fff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.food-page {
+  padding: 30px;
+  max-width: 1000px;   /* keeps content centered */
+  margin: 0 auto;
+}
+
+.food-page h2 {
+  margin-bottom: 20px;
+  color: #ff9800; /* Orange heading */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Grid with exactly 3 columns */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+  gap: 20px;
+}
